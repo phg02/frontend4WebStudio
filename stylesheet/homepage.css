@@ -10,6 +10,7 @@ nav h4 {
 nav {
   display: block;
   position: fixed;
+  font-family: 'Kreon', sans-serif;
 }
 
 #landingPart {
@@ -42,7 +43,22 @@ nav {
 }
 #community-ad{
     background-color: #D7DACA;
-    height: 95vh;
+    height: 86vh;
+}
+
+.hero-com{
+    text-align: center;
+}
+.hero-com h1{
+    padding: 4%;
+}
+#adopt-ad{
+    background-color: #D7DACA;
+    height: 90vh;
+}
+footer{
+    height: 30vh;
+    background-color: #232B40;
 }
 
 @media (max-width: 768px) {

@@ -11,3 +11,7 @@
     text-decoration: none;
     color: white;
 }
+
+.custom-btn:hover{
+    background-color: var(--primary-hover-btn-color);
+}
