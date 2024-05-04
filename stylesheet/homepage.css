@@ -1,29 +1,58 @@
-@import 'shared/fonts.css';
-
-#landingPart{
-    width: 100%;
-    height: 95vh;
-    background-color: #FAF3D8 !important;
-}
+@import "shared/fonts.css";
+@import "shared/buttons.css";
 
 .navbar-light {
-    background-color: #FAF3D8 !important;
+  background-color: #faf3d8 !important;
 }
-nav h4{
-    color: #7F4B23!important
+nav h4 {
+  color: #7f4b23 !important;
 }
-nav{
-    display: block;
-    position: fixed;
-}
-.grid-container{
-    height: 100vh;
-    width: 100%;
-    margin-top: 4rem;
-    display: grid;
-    grid-template-columns: 50% 50%;
-}
-.dog-img> img{
-    height: 40%;
+nav {
+  display: block;
+  position: fixed;
 }
 
+#landingPart {
+  height: 85vh;
+  width: 100%;
+  background-color: #faf3d8;
+}
+
+.grid-container {
+  display: grid;
+  margin-top: 4%;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+  height: 100;
+}
+
+.dog-img {
+    width:70% ;
+    height:100%;
+    justify-content: end;
+}
+
+.dog-img > img {
+  width: 80%;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    margin-top: 4rem;
+  }
+  .dog-img{
+    text-align: center;
+  }
+  .dog-img > img{
+    width: 70%;
+    margin-top: 20px;
+  }
+  .hero-and-btn{
+    text-align: center;
+    margin-top: 5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}

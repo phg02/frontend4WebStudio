@@ -1,0 +1,13 @@
+:root{
+    --primary-btn-color: #B7845C;
+    --primary-hover-btn-color: #E2AD83;
+    --border-radius: 0.5rem;
+}
+
+.custom-btn{
+    background-color: var(--primary-btn-color);
+    padding: 0.5rem 2rem;
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    color: white;
+}
