@@ -13,14 +13,14 @@ nav {
 }
 
 #landingPart {
-  height: 85vh;
+  height: 95vh;
   width: 100%;
   background-color: #faf3d8;
 }
 
 .grid-container {
   display: grid;
-  margin-top: 4%;
+  padding-top: 4rem;
   grid-template-columns: repeat(2, 1fr);
   place-items: center;
   height: 100;
@@ -33,7 +33,7 @@ nav {
 }
 .whiteblank{
     background-color: white;
-    height: 7vh;
+    height: 5vh;
 }
 
 .dog-img > img {
@@ -42,7 +42,7 @@ nav {
 }
 #community-ad{
     background-color: #D7DACA;
-    height: 90vh;
+    height: 95vh;
 }
 
 @media (max-width: 768px) {
