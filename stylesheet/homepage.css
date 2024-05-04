@@ -1,0 +1,55 @@
+@import 'shared/fonts.css';
+
+#landingPart{
+    height: 95vh;
+    background-color: #FAF3D8 !important;
+}
+
+.navbar-light {
+    background-color: #FAF3D8 !important;
+}
+nav h4{
+    color: #7F4B23!important
+}
+section{
+    height: 10vh;
+}
+.grid-container{
+    margin: 2rem;
+    display: grid;
+    height: 95vh;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    position: absolute;
+}
+.dog-img > img{
+    position:relative;
+    height: 50%;
+    bottom: -50px;
+    left: 60px;
+}
+
+.hero-and-btn{
+    position:relative;
+    height: 50%;
+    bottom: -250px;
+}
+
+@media (max-width: 768px) {
+    .grid-container{
+        height: 95vh;
+        grid-template-columns: 1fr;
+        grid-template-rows:1fr 1fr;
+    }
+    .dog-img > img{
+        position:relative;
+        height: 30%;
+        left: 60px;
+    }
+    .hero-and-btn{
+        position:relative;
+    } 
+    .hero-and-btn h1{
+        font-size: 1rem;
+    }
+}
