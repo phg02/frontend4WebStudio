@@ -53,9 +53,34 @@ nav {
     padding: 4%;
 }
 #adopt-ad{
-    background-color: #D7DACA;
-    height: 90vh;
+    height: 86vh;
 }
+.adopt-grid{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    height: 100%;
+}
+.dog-run{
+    background-color: #A0AEAA;
+    height: 100%;
+    text-align: center;
+    display: flex;
+}
+.dog-run > img{
+    width:110%;
+    margin-bottom: 2rem;
+    align-self: flex-end;
+    margin-left: 2rem;
+}
+.process{
+    background-color: #EFF0F0;
+    height: 100%;
+    text-align: center;
+}
+.process >h1{
+    padding: 4%;
+}
+
 footer{
     height: 30vh;
     background-color: #232B40;
@@ -79,4 +104,18 @@ footer{
     margin-left: 1rem;
     margin-right: 1rem;
   }
+  .adopt-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 100%;
+  }
+  .dog-run{
+    text-align: end;
+  }
+  .dog-run > img{
+    width:90%;
+    justify-self: flex-center;
+    margin-left: 4rem;
+    }
 }
