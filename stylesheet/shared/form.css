@@ -1,0 +1,12 @@
+:root{
+    --primary-label-color: #7F4B23;
+    --input-bg-color: #F8EEDF;
+}
+
+.custom-label{
+    color: var(--primary-label-color) !important;
+}
+
+.custom-input{
+    background-color: var(--input-bg-color) !important;
+}
