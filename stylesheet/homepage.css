@@ -10,6 +10,8 @@
 html {
     scroll-behavior: smooth;
   }
+
+
 .navbar-light {
   background-color: var(--primary-bg-color) !important;
 }
@@ -151,6 +153,7 @@ footer p{
     }
     footer{
         height: 45vh;
+        width: 100vw;
         background-color: #232B40;
     }
 }
