@@ -33,7 +33,7 @@ nav {
   padding-top: 4rem;
   grid-template-columns: repeat(2, 1fr);
   place-items: center;
-  height: 100;
+  height: 100vh;
 }
 
 .dog-img {
@@ -44,6 +44,7 @@ nav {
 .whiteblank{
     background-color: white;
     height: 5vh;
+    width: 100vw;
 }
 
 .dog-img > img {
@@ -90,7 +91,8 @@ nav {
 }
 .process{
     background-color: #EFF0F0;
-    height: 100%;
+    height:100%;
+    max-width: 100%;
     /* text-align: center; */
     z-index: 1;
 }
