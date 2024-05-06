@@ -14,13 +14,12 @@ this.classList.toggle('bi-eye');
 
 
 
-const signIn = document.querySelector('button[type="submit"]');
-const regrex =  /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-signIn.addEventListener('click', (e) => {
-    const email = document.querySelector('#email');
-    if(!regrex.test(email.value)){
+const form = document.querySelector('form');
+
+form.addEventListener('submit', (e) => {
+    if(!form.checkValidity()){
         e.preventDefault();
-        email.classList.add("text-danger");
-        alert(`Invalid email address ${email}`);
+        e.stopPropagation();
     }
+    form.classList.add('was-validated');
 })
