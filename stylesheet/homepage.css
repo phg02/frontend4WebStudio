@@ -115,7 +115,7 @@ footer p{
     color: white;
     text-align: center;
 }
-@media (max-width: 768px) {
+@media (max-width: 550px) {
   .grid-container {
     grid-template-columns: 1fr;
     margin-top: 4rem;
@@ -125,13 +125,16 @@ footer p{
   }
   .dog-img > img{
     width: 70%;
-    margin-top: 20px;
+    margin-top: 10px;
   }
   .hero-and-btn{
     text-align: center;
     margin-top: 5rem;
     margin-left: 1rem;
     margin-right: 1rem;
+  }
+  #community-ad, #adopt-ad{
+    height: 92vh;
   }
   .adopt-grid{
     display: grid;
@@ -146,6 +149,10 @@ footer p{
     width:80%;
     justify-self: flex-center;
     margin-left: 4rem;
+    }
+    .whiteblank{
+        height: 2vh;
+    
     }
     .gap-bottom{
         margin-bottom: 1rem;

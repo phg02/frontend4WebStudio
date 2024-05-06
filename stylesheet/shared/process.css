@@ -3,6 +3,7 @@
     height: 100%;
     font-size: 1.8rem;
     padding-left:15px;
+    font-family: 'Inter', sans-serif;
   }
   
   .step {
@@ -95,4 +96,10 @@
         position: absolute;
         border-left: 3px solid gray;
     }
+  }
+
+  @media (max-width: 600px) {
+    .container-step{
+      font-size: 2.4rem;
+    }  
   }
