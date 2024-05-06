@@ -17,9 +17,10 @@ this.classList.toggle('bi-eye');
 const signIn = document.querySelector('button[type="submit"]');
 const regrex =  /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 signIn.addEventListener('click', (e) => {
-    const email = document.querySelector('#email').value;
-    if(!regrex.test(email)){
+    const email = document.querySelector('#email');
+    if(!regrex.test(email.value)){
         e.preventDefault();
-        alert(`Invalid email address ${email    }`);
+        email.classList.add("text-danger");
+        alert(`Invalid email address ${email}`);
     }
 })

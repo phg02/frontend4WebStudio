@@ -53,6 +53,7 @@ nav {
 #community-ad{
     background-color: #D7DACA;
     height: 86vh;
+    width: 100vw;
 }
 
 .hero-com{
@@ -63,11 +64,13 @@ nav {
 }
 #adopt-ad{
     height: 86vh;
+    width: 100vw;
 }
 .adopt-grid{
     display: grid;
     grid-template-columns: 1fr 2fr;
     height: 100%;
+    width: 100vw;
 }
 .dog-run{
     background-color: #A0AEAA;
@@ -82,14 +85,19 @@ nav {
     /* transform: translateX(10%); */
     z-index: 0;
 }
+.title-section{
+  text-align: center;
+}
 .process{
     background-color: #EFF0F0;
     height: 100%;
-    text-align: center;
-    width: 100%;
+    /* text-align: center; */
     z-index: 1;
 }
-.process >h1{
+.adopt-btn-container{
+  text-align: center;
+}
+.title-section >h1{
     padding-top: 2%;
 }
 .step-wrapper{
@@ -98,6 +106,7 @@ nav {
 
 footer{
     height: 30vh;
+    width: 100vw;
     background-color: #232B40;
 }
 hr{

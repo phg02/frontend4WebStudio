@@ -98,8 +98,30 @@
     }
   }
 
-  @media (max-width: 600px) {
+  @media (min-width: 1200px) {
     .container-step{
-      font-size: 2.4rem;
-    }  
+      font-size: 2.2rem;
+    }
+    .step .line {
+      top: 40px;
+      left: 8px;
+  /*   height: 120px; */
+    height: 100%;
+      
+      position: absolute;
+      border-left: 3px solid gray;
+  }  
   }
+
+  @media (max-width: 1000px) {
+    .container-step{
+      font-size: 1.2rem;
+    }
+  }
+
+  @media (max-width: 360px) {
+    .container-step{
+      font-size: 0.8rem;
+    }
+  }
+
