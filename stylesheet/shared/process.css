@@ -83,7 +83,7 @@
   @media (max-width: 600px) {
     .container-step{
         margin-left: 5%;    
-        width:100%;
+        width:85%;
         font-size: 1rem;
     }
     .step .line {
