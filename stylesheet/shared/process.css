@@ -119,7 +119,7 @@
     }
   }
 
-  @media (max-width: 360px) {
+  @media (max-width: 380px) {
     .container-step{
       font-size: 0.8rem;
     }
