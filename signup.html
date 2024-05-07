@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="stylesheet/signup.css">
     <script src="https://kit.fontawesome.com/d535fdea96.js" crossorigin="anonymous"></script>
     <script defer src="javascript/signup.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 
 <body>
@@ -39,7 +40,7 @@
                 <img src="images/paw2.png">
                 <div class="word">
                     <h1>Hello!</h1>
-                    <h4>How "meow" are you today</h4>
+                    <h4>How "meow" are you today?</h4>
                 </div>
             </div>
             <div class="cat-stretch">
@@ -47,8 +48,56 @@
             </div>
         </div>
         <div class="right">
-            <div class="formbox">
-                
+            <div class="formbox shadow-lg">
+                <div class="form-heading">
+                    <h2>Create Account</h2>
+                </div>
+                <form action="">
+                    <div class="input-div">
+                        <label for="username" class="custom-label mb-1">Username:</label>
+                        <p><input type="text" name="username" id="username" placeholder="Enter your username" class="signup-input shadow-lg" required>
+                        </p>
+                    </div>
+                    <div class="input-div">
+                        <label for="email" class="custom-label mb-1">Email:</label>
+                        <p><input type="email" name="email" id="email" placeholder="Enter your email" class="signup-input shadow-lg"></p>
+                    </div>
+                    <div class="input-div">
+                        <label for="password" class="custom-label mb-1">Password:</label>
+                        <div class="input-group  password-stretch">
+                            <input type="password" name="password" id="password" placeholder="Enter your password" class="signup-input-password shadow-lg">
+                            <div class="input-group-prepend btn-div">
+                                <button class="btn"" type="button"><i class="bi bi-eye-slash"
+                                        id="togglePassword"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-div mt-3">
+                        <label for="confirm-password" class="custom-label mb-1">Confirm Password:</label>
+                        <div class="input-group password-stretch">
+                            <input type="password" name="confirm-password" id="confirm-password"
+                                    placeholder="Confirm your password" class="signup-input-password shadow-lg">
+                            <div class="input-group-prepend btn-div">
+                                <button class="btn" type="button"><i class="bi bi-eye-slash"
+                                        id="togglePassword2"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="captcha-container mt-3">
+                        <div class="g-recaptcha" data-sitekey="6Ld9I9QpAAAAAOyDr3_AUoh4xhP7AHZny0W2ydCZ"></div>
+                    </div>
+                    <div class="consent-check">
+                        <label for="consent">
+                        <input type="checkbox" value="agree" name="consent" id="consent" required>
+                             I agree to the term of service and privacy policy</label>
+                    </div>
+                    <div class="bottom-form">
+                        <button type="submit" class="custom-btn">Sign Up</button>
+                        <br>
+                        <label> Or</label>
+                        <p>Already have an account <a href="#">Sign in</a></p>
+                    </div>
+                </form>
             </div>
         </div>
     </div>

@@ -1,15 +1,15 @@
 const togglePassword = document
-.querySelector('#togglePassword');
+    .querySelector('#togglePassword');
 const password = document.querySelector('#password');
 togglePassword.addEventListener('click', () => {
-// Toggle the type attribute using
-// getAttribure() method
-const type = password
-    .getAttribute('type') === 'password' ?
-    'text' : 'password';
-password.setAttribute('type', type);
-// Toggle the eye and bi-eye icon
-this.classList.toggle('bi-eye');
+    // Toggle the type attribute using
+    // getAttribure() method
+    const type = password
+        .getAttribute('type') === 'password' ?
+        'text' : 'password';
+    password.setAttribute('type', type);
+    // Toggle the eye and bi-eye icon
+    this.classList.toggle('bi-eye');
 });
 
 
@@ -17,7 +17,7 @@ this.classList.toggle('bi-eye');
 const form = document.querySelector('form');
 
 form.addEventListener('submit', (e) => {
-    if(!form.checkValidity()){
+    if (!form.checkValidity()) {
         e.preventDefault();
         e.stopPropagation();
     }
