@@ -11,7 +11,6 @@ body{
     height: 100vh;
     width: 100%;
 }
-
 .navbar-light {
   background-color: var(--primary-bg-color) !important;
 }
@@ -70,7 +69,7 @@ nav {
 .right{
     display: flex;
     justify-content: start;
-    align-items: center;
+    align-items: start;
     height: 100%;
     width: 100%;
 
@@ -106,6 +105,7 @@ form{
 }
 .error-input{
     border: 1px solid red;
+    box-sizing: border-box;
 }
 @media (max-width: 1024px) {
     .left{

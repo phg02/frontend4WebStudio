@@ -32,15 +32,27 @@ togglePassword2.addEventListener('click', () => {
 const form = document.querySelector('form');
 
 form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    //documents
     const username = document.querySelector('#username');
     const email = document.querySelector('#email');
     const password = document.querySelector('#password');
     const confirmPassword = document.querySelector('#confirm-password');
     const consent = document.querySelector('#consent');
+
+    //regrex
     const lowerCaseLetters = /[a-z]/g;
     const upperCaseLetters = /[A-Z]/;
     const numbers = /[0-9]/;
     const specialCharacters = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/;
+
+    //remove error
+    username.classList.remove('error-input');
+    email.classList.remove('error-input');
+    password.classList.remove('error-input');
+    confirmPassword.classList.remove('error-input');
+
 
     let error = false;
     const regrex =/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
@@ -125,12 +137,12 @@ form.addEventListener('submit', (e) => {
         confirmPassword.classList.add('error-input');
         errorList += '<li>Please agree the policy</li>';
     }
-    // if(grecaptcha.getResponse(opt_widget_id).length >0){
-    //     error = true;
-    //     password.classList.add('error-input');
-    //     confirmPassword.classList.add('error-input');
-    //     errorList += '<li>Please complete the captcha</li>';
-    // }
+    if(grecaptcha.getResponse().length <=0){
+        error = true;
+        password.classList.add('error-input');
+        confirmPassword.classList.add('error-input');
+        errorList += '<li>Please complete the captcha</li>';
+    }
     
 
     let errors = "<ul>"+errorList+"</ul>";
@@ -140,7 +152,7 @@ form.addEventListener('submit', (e) => {
             title: "Oops...",
             html: errors
           });
-          e.preventDefault();
-          e.stopPropagation();
+         return
     }
+    form.submit();
 })
