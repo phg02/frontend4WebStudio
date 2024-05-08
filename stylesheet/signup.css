@@ -104,6 +104,9 @@ form{
     text-align: center;
     padding-top: 2px;
 }
+.error-input{
+    border: 1px solid red;
+}
 @media (max-width: 1024px) {
     .left{
         padding-top:  5%;
