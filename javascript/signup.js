@@ -145,7 +145,7 @@ form.addEventListener('submit', (e) => {
     }
     
 
-    let errors = "<ul>"+errorList+"</ul>";
+    let errors = "<ul class='error-list'>"+errorList+"</ul>";
     if(error == true){
         Swal.fire({
             icon: "error",

@@ -107,6 +107,10 @@ form{
     border: 1px solid red;
     box-sizing: border-box;
 }
+.error-list{
+    color:red;
+    text-align: start;
+}
 @media (max-width: 1024px) {
     .left{
         padding-top:  5%;
