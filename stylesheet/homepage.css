@@ -68,6 +68,38 @@ nav {
 .hero-com h1{
     padding: 4%;
 }
+.collage-wrapper{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.collage-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 80%;
+    width: 80%;
+    gap: 15px;
+    justify-items: center;
+    align-items: start;
+}
+.img-1, .img-2{
+    text-align: end;
+    width: 80%;
+    height: 80%;
+}
+.img-1 img{
+  width: 100%;
+  border: 2rem solid white;
+}
+.img-2 img{
+  width: 100%;
+  border: 2rem solid white;
+}
+.community-btn{
+  width:100%;
+  margin-top: 2rem;
+  text-align: center;
+}
 #adopt-ad{
     height: 86vh;
     width: 100%;
@@ -131,9 +163,10 @@ footer p{
     color: white;
     text-align: center;
 }
+
 @media (max-width: 550px) {
   .grid-container {
-    grid-template-columns: 1fr;
+    grid-template-columns: 100%;
     margin-top: 4rem;
   }
   .dog-img{
@@ -152,6 +185,15 @@ footer p{
   #community-ad, #adopt-ad{
     height: 92vh;
   }
+  .collage-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 80%;
+    width: 80%;
+    gap: 15px;
+    justify-items: center;
+    align-items: start;
+}
   .adopt-grid{
     display: grid;
     grid-template-columns: 1fr;
