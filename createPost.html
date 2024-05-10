@@ -13,14 +13,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Kreon:wght@300..700&display=swap"
         rel="stylesheet">
-    <link href="https://unpkg.com/filepond/dist/filepond.css" rel="stylesheet">
-    <link href="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css"
-        rel="stylesheet">
-    <script defer src="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.js"></script>
-    <script defer src="https://unpkg.com/filepond-plugin-file-encode/dist/filepond-plugin-file-encode.js"></script>
-    <script defer src="https://unpkg.com/filepond-plugin-image-resize/dist/filepond-plugin-image-resize.js"></script>
-    <script defer src="https://unpkg.com/filepond/dist/filepond.js"></script>
-    <script defer src="/javascripts/fileUpload.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/797e28e901.js" crossorigin="anonymous"></script>
     <script defer src="javascript/fileUpload.js"></script>
@@ -69,20 +61,31 @@
         </nav>
 
         <div class="wrapper">
-           <div class="align-content">
+            <div class="align-content">
                 <div class="title-container">
                     <h1>Create post</h1>
                 </div>
                 <form class="layout-grid">
                     <div class="left">
-                        <input type="file" class="filepond"/>
+                        <div class="drop-zone">
+                            <span class="drop-zone__prompt">Add image to post</span>
+                            <input type="file" name="myFile" class="drop-zone__input">
+                        </div>
                     </div>
-                    <div class="right">2</div>
+                    <div class="right">
+                        <div class="input-post">
+                            <label for=" title" class="custom-label">Title</label>
+                            <input type="text" name="title" class="create-post-input" placeholder="Title">
+                            <label for="description" class="custom-label">Description</label>
+                            <textarea name="description" class="create-post-input" placeholder="Description" cols="3" rows="5"></textarea>
+                            <button type="submit" class='custom-btn'>Post</button>
+                        </div>
+                    </div>
                 </form>
-           </div>
+            </div>
         </div>
 
-    </div>  
+    </div>
 </body>
 
 </html>
