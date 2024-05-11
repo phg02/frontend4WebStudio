@@ -50,3 +50,8 @@ input::placeholder{
     color: #7F4B23;
     font-family: 'Inter', sans-serif;
 }
+
+.post-label{
+    font-family: "Kreon", sans-serif;
+    font-size: 1.2rem
+}
