@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="stylesheet/createPost.css">
+    <link rel="stylesheet" href="stylesheet/createPostPrice.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kreon:wght@300..700&display=swap" rel="stylesheet">
@@ -15,9 +15,9 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/797e28e901.js" crossorigin="anonymous"></script>
-    <script defer src="javascript/fileUpload.js"></script>
+    <script defer src="javascript/fileUploadPrice.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script defer src="javascript/createPost.js"></script>
+    <script defer src="javascript/createPostPrice.js"></script>
 </head>
 
 <body>
@@ -85,7 +85,12 @@
                             <br>
                             <label for="description" class="custom-label post-label">Description</label>
                             <br>
-                            <textarea name="description" class="create-post-input" placeholder="Description" cols="3" rows="5"></textarea> 
+                            <textarea name="description" class="create-post-input" placeholder="Description" cols="1" rows="2"></textarea> 
+                            <br>
+                            <label for=" price" class="custom-label post-label">Price</label>
+                            <br>
+                            <span class="input-symbol-dollar"><input type="number" name="price" id="price" class="create-post-input" placeholder="Price" min="0"></span>
+                            <br>
                             <br>
                             <button type="submit" class='custom-btn disapear-small'>Post</button>
                         </div>
