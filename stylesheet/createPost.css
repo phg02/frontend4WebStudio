@@ -156,8 +156,9 @@ textarea::placeholder {
 	border-radius: 10px;
 	overflow: hidden;
 	background-color: #cccccc;
-	background-size: cover;
-    background-position: center;
+	background-size:contain;
+    /* background-position: center; */
+    background-repeat: no-repeat;
 	position: relative;
 }
 
@@ -250,7 +251,7 @@ textarea::placeholder {
         border-radius: 10px;
         overflow: hidden;
         background-color: #cccccc;
-        background-size: cover;
+        background-size:cover;
         position: relative;
     }
     .align-content{
