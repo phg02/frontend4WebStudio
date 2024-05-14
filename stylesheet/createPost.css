@@ -157,7 +157,7 @@ textarea::placeholder {
 	overflow: hidden;
 	background-color: #cccccc;
 	background-size:contain;
-    /* background-position: center; */
+    background-position: center;
     background-repeat: no-repeat;
 	position: relative;
 }
