@@ -49,6 +49,7 @@ body {
     border-right: 1px solid #b8938b;
     font-family: 'Kreon', sans-serif;
     font-weight: bold;
+    z-index: 999;
 }
 
 .nav-list {
@@ -257,17 +258,13 @@ textarea::placeholder {
     .align-content{
         margin-left: 0;
     }
-    .filepond{
-        width: 100%;
-        height: 80%;
-        margin-left: 0;
-    }
     .layout-grid{
         display: grid;
         width: 100%;
-        height: 80vh;
+        height: 90vh;
         grid-template-columns: 100%;
-        grid-template-rows: 55% 30% 15%;
+        grid-template-rows: 45% 50% 10%;
+        margin-bottom: 6rem;
     }
     .left{
         grid-row: 2/3;
@@ -283,7 +280,7 @@ textarea::placeholder {
 
     .navbar {
         bottom: 0;
-        width: 100vw;
+        width: 100%;
         height: 4rem;
         border-top: 2px solid #b8938b;
     }
@@ -303,12 +300,20 @@ textarea::placeholder {
 }
 
 @media(max-width: 380px){
+    .small-screen{
+        display: block;
+        width: 100%;
+        height: 100%;
+        align-content: center;
+        justify-content: center;
+        padding-bottom: 2rem;
+    }
     .layout-grid{
         display: grid;
         width: 100%;
-        height: 80vh;
+        height: 100vh;
         grid-template-columns: 100%;
-        grid-template-rows: 55% 25% 15%;
+        grid-template-rows: 45% 30% 20%;
     }
     .small-screen{
         margin-top: 6%;
