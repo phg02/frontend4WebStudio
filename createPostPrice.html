@@ -79,14 +79,23 @@
                     </div>
                     <div class="right">
                         <div class="input-post">
-                            <label for=" title" class="custom-label post-label">Title</label>
+                            <label for="title" class="custom-label post-label">Title</label>
                             <br>
                             <input type="text" name="title" id="title" class="create-post-input" placeholder="Title">
+                            <br>
+                            <label for="sortby" class="custom-label post-label">Type of pet</label>
+                            <br>
+                            <select name="sortby" class="create-post-input" id="sortby">
+                                <option disabled selected>Type</option> 
+                                <option>Dog</option>
+                                <option>Cat</option>
+                            </select>
                             <br>
                             <label for="description" class="custom-label post-label">Description</label>
                             <br>
                             <textarea name="description" class="create-post-input" placeholder="Description" cols="1" rows="2"></textarea> 
                             <br>
+                            
                             <label for=" price" class="custom-label post-label">Price</label>
                             <br>
                             <span class="input-symbol-dollar"><input type="number" name="price" id="price" class="create-post-input" placeholder="Price" min="0"></span>

@@ -267,7 +267,7 @@ textarea::placeholder {
         width: 100%;
         height: 80vh;
         grid-template-columns: 100%;
-        grid-template-rows: 40% 50% 10%;
+        grid-template-rows: 55% 30% 15%;
     }
     .left{
         grid-row: 2/3;
@@ -308,7 +308,7 @@ textarea::placeholder {
         width: 100%;
         height: 80vh;
         grid-template-columns: 100%;
-        grid-template-rows: 40% 40% 10%;
+        grid-template-rows: 55% 25% 15%;
     }
     .small-screen{
         margin-top: 6%;
@@ -342,4 +342,13 @@ input[type=number]::-webkit-outer-spin-button {
 .error-list{
     color:red;
     text-align: start;
+}
+#sortby {
+    background-color: var(--input-bg-color);
+    width: 87%;
+    padding: 0.5rem 1.5rem;
+    border: none;
+    font-size: 1rem;
+    border-radius: 0.6rem;
+    color: #7f4b23;
 }
