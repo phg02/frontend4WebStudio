@@ -21,7 +21,7 @@ form.addEventListener('submit', (e) => {
         errorList += '<li>Title is required</li>';
     }
 
-    if (sortby.value !== 'dog' && sortby.value !== 'cat') {
+    if (sortby.value !== 'Dog' && sortby.value !== 'Cat') {
         error = true;
         sortby.classList.add('error-input');
         sortby.focus();
