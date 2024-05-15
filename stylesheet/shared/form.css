@@ -1,8 +1,14 @@
-:root{
+/* :root{
     --primary-label-color: #7F4B23;
     --input-bg-color: #F8EEDF;
     --form-bg-color: #F8EEDF;
-}
+    body[data-theme="dark"]{
+        --primary-label-color: #DEE9FF;
+        --form-bg-color: #82AAAD;
+        --input-bg-color: #82AAAD;
+    }
+} */
+@import 'shared/variables.css';
 
 .custom-label{
     color: var(--primary-label-color) !important;
@@ -47,7 +53,7 @@
 }
 
 input::placeholder{
-    color: #7F4B23;
+    color: var(--primary-label-color);
     font-family: 'Inter', sans-serif;
 }
 

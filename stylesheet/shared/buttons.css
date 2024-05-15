@@ -3,6 +3,11 @@
     --primary-hover-btn-color: #E2AD83;
     --border-radius: 0.5rem;
     --adopt-btn-color: #6FBB96;
+
+    body[data-theme = 'dark']{
+        --primary-btn-color: rgb(184, 180, 197);
+        --primary-hover-btn-color: rgb(154, 148, 176);
+    }
 }
 
 .custom-btn{
