@@ -65,11 +65,11 @@ body {
 }
 
 .nav-link:hover {
-    color: #b6845c;
+    color: var(--nav-hover-color);
 }
 
 .nav-link:active {
-    color: #e2ad83;
+    color: var(--nav-active-color) ;
 }
 
 .nav-link {

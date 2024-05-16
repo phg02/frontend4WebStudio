@@ -8,6 +8,9 @@
     --primary-label-color: #7F4B23;
     --input-bg-color: #F8EEDF;
     --form-bg-color: #F8EEDF;
+    --nav-hover-color: rgb(182, 132, 107);
+    --nav-active-color: rgb(226, 173, 131);
+
 
     body[data-theme="dark"]{
         --primary-text-color: #DEE9FF;
@@ -16,5 +19,7 @@
         --primary-label-color: #DEE9FF;
         --form-bg-color: #82AAAD;
         --input-bg-color: #82AAAD;
+        --nav-hover-color: rgb(175, 200, 250);
+        --nav-active-color: rgb(111, 136, 186);
     }
 }
