@@ -53,3 +53,9 @@ form.addEventListener('submit', (e) => {
     }
     form.submit();
 })
+
+window.addEventListener('DOMContentLoaded', async (event) => {
+    const request = await fetch("https://ipinfo.io/json?token=af75adfce193d2");
+    const data = await request.json()
+    document.querySelector('#userlocation').value = `${data.city}, ${data.region}, ${data.country}`;
+});

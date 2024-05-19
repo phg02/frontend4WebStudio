@@ -261,7 +261,7 @@ textarea::placeholder {
     .layout-grid{
         display: grid;
         width: 100%;
-        height: 90vh;
+        height: 110vh;
         grid-template-columns: 100%;
         grid-template-rows: 45% 50% 10%;
         margin-bottom: 6rem;
@@ -311,7 +311,7 @@ textarea::placeholder {
     .layout-grid{
         display: grid;
         width: 100%;
-        height: 100vh;
+        height: 110vh;
         grid-template-columns: 100%;
         grid-template-rows: 45% 30% 20%;
     }
